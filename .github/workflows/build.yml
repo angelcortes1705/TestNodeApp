@@ -1,0 +1,10 @@
+on: push
+jobs:
+  build-python:
+    runs-on: ubuntu-latest
+    container: python:3.10
+    steps:
+      - run: echo "Probando contenedor Python"
+      - run: python --version
+      - uses: actions/checkout@v3
+      - run: python script.py
