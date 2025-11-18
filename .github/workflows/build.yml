@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     container: python:3.10
     steps:
-      - run: echo "Probando contenedor Python"
+      - run: echo "Probando container Python"
       - run: python --version
       - uses: actions/checkout@v3
       - run: python script.py
